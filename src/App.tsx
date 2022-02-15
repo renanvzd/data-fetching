@@ -6,7 +6,7 @@ export function App() {
   return (
     <Routes>
       <Route path="/" element={<Repos />} />
-      <Route path="/repo" element={<Repo />} />
+      <Route path="/repos/*" element={<Repo />} />
 
     </Routes>
   )
