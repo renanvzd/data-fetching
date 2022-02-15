@@ -13,7 +13,8 @@ export function Repos() {
 
     return response.data;
   }, {
-    refetchOnWindowFocus: true,
+    // refetchOnWindowFocus: true,
+    staleTime: 1000 * 60 // 1 minuto
   })
 
   return (
