@@ -11,6 +11,8 @@ function App() {
     const response = await axios.get('https://api.github.com/users/renanvzd/repos');
 
     return response.data;
+  }, {
+    refetchOnWindowFocus: true,
   })
 
   return (
